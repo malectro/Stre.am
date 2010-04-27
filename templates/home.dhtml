@@ -1,0 +1,17 @@
+{% extends "base.dhtml" %}
+
+{% block content %}
+	<div id="stream-compose">
+		<h2>Compose <div id="stream-timer"></div></h2>
+		<div id="stream-input" contenteditable="true"> </div>
+		<button id="stream-post">post</button>
+	</div>
+	<div id="stream-recent">
+		{% for stream in streams %}
+			<div class="stream">
+				<div class="time">{{ stream.published }}</div>
+				<div class="text">{{ stream.text }}</div>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}

@@ -1,0 +1,40 @@
+/**
+ * Globals
+ */
+html, body, div, span, a, p, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+/**
+ * stre.am
+ */
+#main {
+	position: absolute;
+	left: 50%;
+	margin-left: -490px;
+	width: 980px;
+	border: 1px solid #aaa;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+#stream-compose {
+	padding: 10px;
+}
+	#stream-compose h2 {
+		font-size: 17px;
+	}
+	#stream-input {
+		min-height: 100px;
+		max-height: 500px;
+		padding: 6px;
+		border: 1px solid #aaa;
+		font-size: 13px;
+	}

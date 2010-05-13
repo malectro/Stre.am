@@ -10,5 +10,5 @@ class Stream(models.Model):
 		return self
 	
 	def __unicode__(self):
-		return str(self.pub_date) + ': ' + self.text[:10] + '...'
+		return str(self.published) + ': ' + self.text[:10] + '...'
 
